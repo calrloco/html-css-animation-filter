@@ -118,7 +118,6 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    
 }
 .ex-12-button:hover .ex-12-top-white{
     animation:move-left 2s ease-in-out;
