@@ -12,18 +12,25 @@
     height: 100px;
     background: red;
     transition: all 3s;
+    position: relative;
+    z-index: 2;
 }
 .ex-2-square:active{
     width: 100%;
+    
 }
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
-    transition: all 3s;
+    transition: border-radius 2s, transform .1s cubic-bezier(0.280, 0.840, 0.420, 1);
+    
 }
 .ex-3-square:hover {
     border-radius: 50%;
+}
+.ex-3-square:active{
+    transform: translateY(20.5%);
 }
 .ex-4-square {
     width: 100px;
@@ -34,6 +41,7 @@
 .ex-4-square:hover{
     opacity: 0;
 }
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -172,4 +180,68 @@
 }
 .well{
     overflow: hidden;
+}
+.emoticon{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 0;
+}
+.well-position{
+    position: relative;
+    
+}
+.eye-left{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    border-radius: 50%;
+}
+.eye-right{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    border-radius: 50%;
+}
+.mouth{
+    background-color: #fff;
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: all .3s;
+    transition-delay: 1s;
+}
+.pupil{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    border-radius: 50%;
+    transition: all .5s;
+    transition-delay: 1s;
+}
+.well-position:hover .pupil{
+ left: 0%;
+ top: 30%;
+}
+.well-position:hover .mouth{
+    border-radius: 0;
+    height: 10px;
 }
