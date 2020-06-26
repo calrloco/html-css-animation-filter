@@ -153,21 +153,24 @@
     animation:giro-right 2s;
  }
  @keyframes giro-right{
-          0%{left: 10%;}
-          20%{left: 80%;top: -10px;}
-          40%{left: 80%;top: 80%;}
-          60%{left:-10%; top: 80%;}
-          70%{left:-10%;top:-10px;}
-          100%{left: 10%; bottom: -10px;}
+          0%{left: 10%;top: -20px;}
+          20%{left: 80%;top: -20px;}
+          40%{left: 80%;top: 73.5%;}
+          60%{left:-20%; top: 73.5%;}
+          70%{left:-20%;top:-20px;}
+          100%{left: 20%; top: -20px;}
  }
  .ex-13-button:hover .ex-13-bottom-white{
     animation: giro-left 2s;
  }
  @keyframes giro-left{
-    0%{right: 20%;}
-    20%{right: 80%;bottom: -10px;}
-    40%{right: 80%;bottom: 80%;}
-    60%{right:-10%; bottom: 80%;}
-    70%{right:-10%;bottom:-10px;}
-    100%{right: 20%; bottom: -10px;}
+    0%{right: 20%; bottom: -20px;}
+    20%{right: 80%;bottom: -20px;}
+    40%{right: 80%;bottom: 100%;}
+    60%{right:-20%; bottom: 100%;}
+    70%{right:-20%;bottom:-20px;}
+    100%{right: 20%; bottom: -20px;}
+}
+.well{
+    overflow: hidden;
 }
