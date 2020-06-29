@@ -165,7 +165,7 @@
           40%{left: 80%;top: 73.5%;}
           60%{left:-20%; top: 73.5%;}
           70%{left:-20%;top:-20px;}
-          100%{left: 20%; top: -20px;}
+          100%{left: 10%; top: -20px;}
  }
  .ex-13-button:hover .ex-13-bottom-white{
     animation: giro-left 2s;
